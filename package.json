@@ -1,12 +1,13 @@
 {
-  "name": "todo",
+  "name": "unnamed",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack --watch --mode development"
+    "dev-watch": "webpack --watch --mode development",
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files (x86)\\Firefox Developer Edition\\firefox.exe\""
   },
   "keywords": [],
   "author": "",
