@@ -1,7 +1,27 @@
 html {
     font-size: 10px;
+    
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        padding: 1em 0;
+    }
 }
 
-h1 {
-    font-size: 4rem;
+p {
+    &.passage {
+        opacity: 0;
+    }
+    
+    &.reveal {
+        transition: opacity 2s;
+        opacity: 1;
+    }
 }

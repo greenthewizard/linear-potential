@@ -8,4 +8,13 @@ document.querySelector('body')
         'afterbegin',
         mdConverter.makeHtml(md));
 
-console.log('All good!');
+document.querySelectorAll('a')
+    .forEach((el) => {
+        el.addEventListener('click', (e) => {
+            let href = e.target.href;
+            let anchor = href.substring(href.indexOf("#"));
+            
+            let $p = document.querySelector(anchor);
+            $p.classList.toggle('reveal');
+        });
+    });
